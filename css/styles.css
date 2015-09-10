@@ -1,0 +1,959 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+	
+html{
+	overflow-x:hidden; 
+}
+
+body{
+	background: url(../img/textura_negra.png) !important;
+}
+
+.titulo-cancion{
+	font-family: century;
+	font-size: 20px;
+	color: white;
+	text-align: center
+}
+
+.reproductor{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	z-index: 999;
+}
+
+.emisora-footer{
+	height: 320px !important;
+}
+
+.descripcion{
+	width: 100%;
+	height: 300px;
+	background: blue;
+	padding-top: 30px;
+}
+
+.kc-item img {
+                position:absolute;
+                pointer-events: none;   /* Make images non-selectable. */
+                width:100%;             /* Make images expand to wrapper size (used in 2d modes). */
+            }
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.5s ease-in; 
+  -moz-transition: all 0.5s ease-in; 
+  -o-transition: all 0.5s ease-in; 
+  transition: all 0.5s ease-in;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+
+.header{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../img/header2.png) no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	opacity: 0;
+}
+
+.opacity{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3); 
+}
+
+.logo{
+	margin-top: 80px;
+	width: 100%;
+}
+
+.logo img{
+	width: 100%
+}
+
+.logo_header{
+	opacity: 0;
+	position: relative;
+	top: -20px;
+}
+
+.jeloz_header{
+	opacity: 0;
+	position: relative;
+	top: 20px;
+}
+
+.redes{
+	width: 400px;
+	height: 80px;
+	position: absolute;
+	left: 50%;
+	margin-left:-200px; 
+	bottom: 35px;
+	opacity: 0;
+}
+
+.js-video {
+height: 0;
+padding-top: 25px;
+padding-bottom: 48.3%;
+margin-bottom: 10px;
+position: relative;
+overflow: hidden;
+}
+
+.js-video.widescreen {
+padding-bottom: 56.34%;
+}
+
+.js-video.vimeo {
+padding-top: 0;
+}
+
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+.redes img{
+	width: 20%;
+	float: left;
+	-webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition:         all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.redes img:hover{
+	transform:scale(1.1);
+}
+
+.video_sencillo{
+	height: 50px;
+	padding: 20px 0px ;
+	height: auto; 
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:        all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+  }
+
+.sencillos{
+	width: 100%;
+	padding: 180px 0px 100px 0px;
+	height: auto;
+	background: url(../img/wallpaper7.png) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+
+.off-left{
+	position: relative;
+	left: -50px;	
+	opacity: 0;
+
+}
+
+.off-right{
+	position: relative;
+	left: 50px;	
+	opacity: 0;
+
+}
+
+.on{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 1;
+}
+
+
+/* Menu */
+
+.barra_menu{
+	height: 80px;
+	padding-top:27px; 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3474a8+0,274796+100 */
+background: rgb(52,116,168); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(52,116,168,1) 0%, rgba(39,71,150,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,116,168,1)), color-stop(100%,rgba(39,71,150,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(52,116,168,1) 0%,rgba(39,71,150,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(52,116,168,1) 0%,rgba(39,71,150,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(52,116,168,1) 0%,rgba(39,71,150,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(52,116,168,1) 0%,rgba(39,71,150,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3474a8', endColorstr='#274796',GradientType=0 ); /* IE6-9 */
+
+border: none !important;
+border-radius: 0px !important;
+}
+
+@font-face{
+	font-family: century;
+	src:url(../fonts/Century.ttf)
+}
+
+@font-face{
+	font-family: centurybold;
+	src:url(../fonts/Centurybold.ttf)
+}
+
+@font-face{
+	font-family: centurybolditalic;
+	src:url(../fonts/Centurybolditalic.ttf)
+}
+
+@font-face{
+	font-family: centuryitalic;
+	src:url(../fonts/Centuryitalic.ttf)
+}
+
+.navbar-nav > li > a{
+	
+	font-family: centurybold;
+	font-size: 17px;
+	 color: white !important;
+	 padding-top: 3px !important;
+	 padding-bottom: 10px !important;
+ 	
+}
+
+.wallpaper-body{
+	padding-top:70px;
+}
+
+	/*background: url(../img/oro.png) no-repeat;
+ 	background-size: 100%;
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;*/
+
+.logo_menu{
+	width: 70px;
+    position: relative;
+    top: -34px;
+}
+
+#menu{
+	transition: all ease-in 0.6s
+}
+
+.multimedia{
+	width: 100%;
+	padding: 40px 0px;
+}
+
+.galeria_imagenes{
+	width: 100%;
+	padding: 40px 0px;
+
+}
+
+.galeria_wallpapers{
+	width: 100%;
+	padding: 40px 0px;
+
+}
+
+
+.contenedor_galeria_imagenes{
+	width: 95%;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	padding: 10px 0px;
+	position: relative;
+	display: inline-block;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:        all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+}
+
+.contenedor_galeria_wallpapers{
+	width: 95%;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	padding: 10px 0px;
+	position: relative;
+	display: inline-block;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:        all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+}
+.off-bottom{
+	top: 50px;
+	opacity: 0;
+}
+
+.contenedor_galeria_videos{
+	width: 98%;
+	margin-top: 30px;
+	padding: 10px 0px;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:        all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+	
+}
+
+.formulario{
+	position: relative;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:        all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+	
+}
+
+.contenedor_galeria_imagenes ul li,.contenedor_galeria_wallpapers ul li, .contenedor_galeria_videos ul li a{
+	margin:0px;
+	padding:0px;
+	position: relative;
+}
+
+.contenedor_galeria_imagenes ul li a,.contenedor_galeria_wallpapers ul li a, .contenedor_galeria_videos ul li{
+	margin:0px;
+	padding: 0px;
+}
+
+.contenedor_galeria_imagenes ul li img{
+	width:16.6%;
+	float: left;
+	opacity: 0.8;
+	margin:0px;
+	padding: 0px;
+}
+
+.contenedor_galeria_wallpapers ul li img{
+	width:16.6%;
+	float: left;
+	opacity: 0.8;
+	margin:0px;
+	padding: 0px;
+}
+
+
+.contenedor_galeria_videos ul li .video_imagen{
+	width:30%;
+	margin: 1%;
+	float: left;
+	opacity: 0.7;
+	transition: all ease-in 0.2s;
+	-webkit-transition: all ease-in 0.2s;
+	-moz-transition: all ease-in 0.2s;
+	-ms-transition: all ease-in 0.2s;
+	position: relative;
+}
+
+.contenedor_galeria_imagenes ul li img:hover,
+.contenedor_galeria_wallpapers ul li img:hover,
+.contenedor_galeria_videos ul li .video_imagen:hover {
+	-webkit-opacity:1;
+	-moz-opacity:1;
+	-ms-opacity:1;
+	opacity:1;
+}
+
+.play{
+	position: absolute;
+	z-index: 9;
+	left: 50%;
+}
+
+
+.contenedor{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.titulo{
+	text-align: left;
+	font-family: centurybold;
+	font-size: 25px;
+	background: url(../img/oro.png) no-repeat;
+ 	background-size: 100%;
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+
+
+.subtitulo{
+	font-family: century;
+	font-size: 18px;
+	color: black;
+	text-align: left;
+}
+
+.linea{
+	width: 100px;
+	height: 1px;
+	background:url(../img/oro.png) no-repeat;
+ 	background-size: cover;
+ 	background-position:bottom;
+}
+
+
+
+
+.text{
+	width: 100%;
+	padding: 8px 10px;
+	font-family: century;
+	border: 2px solid black;
+	font-size: 20px;
+	color: black;
+	background: transparent;
+
+}
+
+.textarea{
+	width: 100%;
+	height: 150px;
+	padding: 10px 10px;
+	font-family: century;
+	border: 2px solid black;
+	font-size: 20px;
+	color: black;
+	background: transparent;
+}
+
+.contacto{
+	width: 100%;
+	height: auto;
+	padding: 100px 0px;
+	background: url(../img/fondo-contacto.png) no-repeat;
+	background-size: cover;
+	display: inline-block;
+
+}
+
+.boton_enviar{
+	padding: 5px 10px;
+	background:transparent;
+	border: 2px solid #254F9B;
+	font-family: century;
+	color: #254F9B;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.skew{
+	width: 100%;
+	height: 150px;
+	background: red;
+	transform:skewY(2deg);
+	background: url(../img/textura_negra.png);
+	position: relative;
+	top: 30px;
+}
+
+.footer{
+	width: 100%;
+	height: 300px;
+	background: url(../img/footer.png) no-repeat;
+	background-size: cover;
+	background-position: 50%;
+}
+
+.logo-footer{
+	width: 200px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.derechos{
+	font-family: century;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	line-height: 8px;
+}
+
+.logo-footer img{
+	width: 100%;
+}
+
+.oro{
+	font-family: centurybold;
+	color: #F0E79C;
+}
+
+.emisora-body{
+	padding-top: 80px;
+}
+
+.light-cubo{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	z-index: 999999999;
+	-webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  	transition:        all 400ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+  	opacity: 0;
+  	display: none;
+}
+
+.popup{
+	width: 90%;
+	height:600px;
+	margin: 0 auto;
+	position: relative;
+	top: 60px;
+	background: white;
+	border-radius: 5px;
+	padding: 10px 5%
+}
+
+.equis{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: url(../img/equis2.png) no-repeat;
+	background-size: 100%;
+}
+
+.boton-descargar-cel{
+	font-family: centurybold;
+	font-size: 20px;
+	border: 3px solid transparent;
+	-webkit-border-image: url(../img/oro.png) 5 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/oro.png) 5 round; /* Opera 11-12.1 */
+    border-image: url(../img/oro.png) 5 round;
+    color: #8E5516;
+	padding: 10px 15px;
+	background: transparent;
+	position: relative;
+	top: 125%;
+	left: 50%;
+    margin-left: -75px;
+}
+
+.boton-descargar-pc{
+	font-family: centurybold;
+	font-size: 20px;
+	border: 3px solid transparent;
+	-webkit-border-image: url(../img/oro.png) 5 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/oro.png) 5 round; /* Opera 11-12.1 */
+    border-image: url(../img/oro.png) 5 round;
+    color: #8E5516;
+	padding: 10px 15px;
+	background: transparent;
+	position: relative;
+	top: 160%;
+	left: 50%;
+    margin-left: -75px;
+}
+
+.boton-descargar-tablet{
+	font-family: centurybold;
+	font-size: 20px;
+	border: 3px solid transparent;
+	-webkit-border-image: url(../img/oro.png) 5 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/oro.png) 5 round; /* Opera 11-12.1 */
+    border-image: url(../img/oro.png) 5 round;
+    color: #8E5516;
+	padding: 10px 15px;
+	background: transparent;
+	position: relative;
+	top: 118%;
+	left: 50%;
+    margin-left: -75px;
+}
+
+.celular{
+	width: 250px;
+	height: 500px;
+	margin: 0 auto;
+	background:url(../img/iphone.png) no-repeat;
+	background-size: 90%;
+	background-position: bottom;
+	padding: 203px 59px 57px 56px;
+}
+
+.contenedor-celular{
+	width: 270px;
+    height: 500px;
+    float: left;
+}
+
+.contenedor-pc{
+	width: 500px;
+	height: 500px;
+	float: left;
+}
+
+.contenedor-tablet{
+	width: 400px;
+    height: 500px;
+    float: left;
+}
+
+.pc{
+	width: 550px;
+	height: 500px;
+	margin: 0 auto;
+	background:url(../img/pc.png) no-repeat;
+	background-size: 90%;
+	background-position: bottom;
+	padding: 138px 65px 136px 70px;
+
+}
+
+.tablet{
+	width: 310px;
+	height: 500px;
+	margin: 0 auto;
+	background:blue;
+	background:url(../img/tablet.png) no-repeat;
+	background-size: 90%;
+	background-position: bottom;
+	padding: 192px 57px 50px 60px;
+}
+
+.pantalla-cel{
+	width: 100%;
+	height: 100%;
+	background: url(../img/wallpaper1.png) no-repeat;
+	background-size: cover;
+	background-position: 10%;
+
+}
+
+.pantalla-pc{
+	width: 100%;
+	height: 100%;
+	background: url(../img/wallpaper1.png) no-repeat;
+	background-size: cover;
+	background-position: 10%;
+
+}
+
+.pantalla-tablet{
+	width: 100%;
+	height: 100%;
+	background: url(../img/wallpaper1.png) no-repeat;
+	background-size: cover;
+	background-position: 10%;
+
+}
+
+
+
+@media (max-width:1460px){
+
+.contenedor-celular{
+	width: 180px;
+    height: 500px;
+    float: left;
+}
+
+.contenedor-pc{
+	width: 500px;
+	height: 500px;
+	float: left;
+}
+
+.contenedor-tablet{
+	width: 290px;
+    height: 500px;
+    float: left;
+}
+
+
+
+}
+
+
+
+@media (max-width:1260px){
+
+.contenedor-celular{
+	width: 100%;
+    height: 500px;
+    float: left;
+}
+
+.contenedor-pc{
+	width: 100%;
+	height: 500px;
+	float: left;
+}
+
+.contenedor-tablet{
+	width: 100%;
+    height: 500px;
+    float: left;
+}
+
+.popup{
+	width: 90%;
+	height:auto;
+	display: inline-block;
+	margin: 0 5%;
+	position: relative;
+	top: 60px;
+	background: white;
+	border-radius: 5px;
+	padding: 10px 5% 150px 5%;
+}
+
+.light-cubo{
+	overflow-y:scroll; 
+}
+
+}
+
+@media (max-width:720px){
+
+
+
+.contenedor-celular{
+	width: 100%;
+    height: 400px;
+    float: left;
+}
+
+.contenedor-pc{
+	width: 100%;
+	height:370px;
+	float: left;
+}
+
+.contenedor-tablet{
+	width: 100%;
+    height: 500px;
+    float: left;
+}
+
+.pc{
+	 width: 320px;
+    height: 344px;
+    margin: 0 auto;
+    background: url(../img/pc.png) no-repeat;
+    background-size: 90%;
+    background-position: bottom;
+    padding: 134px 45px 81px 47px;
+}
+
+.tablet{
+	width: 310px;
+    height: 434px;
+    margin: 0 auto;
+    background: blue;
+    background: url(../img/tablet.png) no-repeat;
+    background-size: 90%;
+    background-position: bottom;
+    padding: 126px 57px 50px 60px;
+}
+
+.celular{
+	width: 250px;
+    height: 407px;
+    margin: 0 auto;
+    background: url(../img/iphone.png) no-repeat;
+    background-size: 90%;
+    background-position: bottom;
+    padding: 109px 59px 57px 56px;
+}
+
+.popup{
+	width: 96%;
+    height: auto;
+    display: inline-block;
+    margin: 0px 2%;
+    position: relative;
+    top: 60px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px 5%;
+}
+
+.light-cubo{
+	overflow-y:scroll; 
+}
+
+}
+
+
+@media (max-width:992px){
+
+.contenedor_galeria_imagenes ul li img{
+	width:25%;
+	}
+
+.contenedor_galeria_wallpapers ul li img{
+	width:25%;
+	}	
+
+.contenedor_galeria_imagenes{
+	width:100%;
+	}	
+
+.contenedor_galeria_wallapers{
+	width:100%;
+	}		
+
+.contenedor_galeria_videos ul li .video_imagen{
+	width:100%;
+	margin: 0%;
+	margin-bottom: 20px;
+	}	
+
+
+.contenedor{
+	width: 80%;
+	margin: 0 auto;
+	}
+
+
+
+.header{
+	background-position: 20%;
+	}	
+
+.opacity{
+	background: rgba(0,0,0,0.5); 
+	}
+
+}
+
+
+@media (max-width:768px){
+
+	.contenedor_galeria_imagenes{
+	width:95%;
+	}	
+
+	.contenedor_galeria_videos{
+	width:95%;
+	}	
+
+.contenedor_galeria_videos ul li .video_imagen{
+	width:100%;
+	margin: 0%;
+	margin-bottom: 20px;
+	}	
+
+.contenedor_galeria_imagenes ul li img{
+	width:50%;
+	}
+
+.contenedor_galeria_wallpapers ul li img{
+	width:50%;
+	}
+
+.linea{
+	width: 100px;
+	margin: 15px auto;
+	height: 1px;
+	background:url(../img/oro.png) no-repeat;
+ 	background-size: cover;
+ 	background-position:bottom;
+	}
+
+
+
+.redes{
+	width: 300px;
+	margin-left:-150px; 
+
+	}
+
+
+.contenedor{
+	width: 92%;
+	margin: 0 auto;
+	}
+
+.titulo{
+	text-align: center;
+	}	
+
+.subtitulo{
+
+	text-align: center;
+}
+
+.barra_menu{
+		height: auto;
+		padding-top:0; 
+	}
+
+.logo_menu{
+	width: 53px;
+    position: relative;
+    top: -12px;
+	}
+
+.navbar-default .navbar-toggle {
+    border:none;
+    color: white;
+    padding: 0px;
+
+	}
+
+.navbar-default .navbar-toggle:hover {
+    background: transparent !important;
+	}	
+
+.navbar-default .navbar-toggle:active {
+    background: transparent !important;
+	}		
+
+.navbar-default .navbar-toggle:focus {
+    background: transparent !important;
+	}		
+
+.botonsito{
+	width: 53px;
+    font-size: 33px;
+    padding: 0px !important;
+    margin: 0px !important;
+    background: url(../img/oro.png) no-repeat;
+ 	background-size: cover;
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+	}	
+
+.botonsito:hover{
+	opacity: 0.8;
+	}	
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #284997 !important;
+	}
+
+
+}
+

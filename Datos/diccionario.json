@@ -1,0 +1,33 @@
+{
+	"RecursosJeloz":
+		{
+			"Logo":"",
+			"ImagenHeader": "",
+			"Redes":[
+				{
+					"Red":"facebook",
+					"Link":"https://www.facebook.com/Jelozmusic?fref=ts"
+				},
+				{
+					"Red":"twitter",
+					"Link":"https://twitter.com/jelozmusic"
+				},
+				{
+					"Red":"instagram",
+					"Link":"https://instagram.com/jelozmusic/"
+				},
+				{
+					"Red":"youtube",
+					"Link":"https://www.youtube.com/user/JelozMusic"
+				},
+				{
+					"Red":"spotify",
+					"Link":"https://www.youtube.com/user/JelozMusic"
+				}
+				
+			],
+			"Imagenes":[],
+			"Videos":""
+			
+		}
+}
