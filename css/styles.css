@@ -15,9 +15,17 @@ body{
 
 .titulo-cancion{
 	font-family: century;
-	font-size: 20px;
-	color: white;
-	text-align: center
+	font-size: 23px;
+	color: #E6C066;
+	text-align: center;
+}
+
+.linea-emisora{
+	width: 150px;
+	height: 1px;
+	background: #E6C066;
+	margin: 0 auto;
+	border: none;
 }
 
 .reproductor{
@@ -35,7 +43,7 @@ body{
 .descripcion{
 	width: 100%;
 	height: 300px;
-	background: blue;
+	background: url(../img/textura-emisora.png);
 	padding-top: 30px;
 }
 
@@ -68,6 +76,26 @@ body{
   opacity: 0;
 }
 
+.repro{
+	position: absolute !important;
+    top: 0px;
+    z-index: 99;
+    width: 50px !important;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition:all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.kc-item{
+	cursor: pointer;
+}
+
+.repro:hover{
+	transform:scale(1.1);
+}
 
 
 .header{
@@ -396,6 +424,10 @@ border-radius: 0px !important;
 	font-size: 25px;
 	background: url(../img/oro.png) no-repeat;
  	background-size: 100%;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
  	-webkit-background-clip: text;
  	-webkit-text-fill-color: transparent;
 }
