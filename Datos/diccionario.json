@@ -26,8 +26,21 @@
 				}
 				
 			],
-			"Imagenes":[],
-			"Videos":""
+			"Multimedia":{
+				"Imagenes":[],
+				"Videos":[]
+			},
+			"VideosDestacados":{
+				"Principal":"",
+				"360":""
+			},
+			"EmisoraOnline":[
+				{
+					"Nombre":"Cancion de Prueba",
+					"LinkCancion":"www.micancion.com/micancion.mp3",
+					"Duracion":1000
+				}
+			]
 			
 		}
 }
