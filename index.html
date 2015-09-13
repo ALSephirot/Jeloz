@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="JelozApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Jeloz - Official Site</title>
@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="css/prettyPhoto.css" rel="stylesheet">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/smoothscroll.js"></script>
-
+    <script src="js/Angular/Controller.js"></script>
 
 	<!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="css/all.min.css"> 
@@ -37,23 +37,10 @@
 					</div>
 				</div>
 				
-				<div class=" redes">
-					<a href="https://www.youtube.com/user/JelozMusic" target="_blank">
-						<img src="img/spotify.png" alt="">
+				<div class=" redes" ng-controller="RedesCtrl">
+					<a ng-repeat="Red in Redes" href="{{Red.Link}}" target="_blank">
+						<img src="{{'img/'+Red.Red+'.png'}}" alt="{{Red.Red}}">
 					</a>
-					<a href="https://www.facebook.com/Jelozmusic?fref=ts" target="_blank">
-						<img src="img/facebook.png" alt="">
-					</a>
-					<a href="https://twitter.com/jelozmusic" target="_blank">
-						<img src="img/twitter.png" alt="">
-					</a>
-					<a href="https://instagram.com/jelozmusic/" target="_blank">
-						<img src="img/instagram.png" alt="">
-					</a>
-					<a href="https://www.youtube.com/user/JelozMusic" target="_blank">
-						<img src="img/youtube.png" alt="">
-					</a>
-					
 				</div>
 		
 			</div>
@@ -90,66 +77,11 @@
 				<h2 class="titulo">IMAGENES</h2>
 				<hr class="linea">
 			
-			<div class="contenedor_galeria_imagenes off-bottom">
+			<div class="contenedor_galeria_imagenes off-bottom" ng-controller="ImagenesCtrl">
 				<ul>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini2.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini1.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini3.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini5.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini4.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini2.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini4.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini3.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini1.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini2.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-							<img src="img/galeria_imagenes/miniaturas/mini3.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="img/galeria_imagenes/originales/orig1.png" class="wplightbox">
-   							<img src="img/galeria_imagenes/miniaturas/mini5.png" alt="">
+					<li ng-repeat="Imagen in Imagenes">
+						<a href="{{Imagen.Imagen}}" class="wplightbox">
+							<img src="{{Imagen.Miniatura}}" alt="{{Imagen.Alt}}">
 						</a>
 					</li>
 				</ul>
@@ -164,26 +96,13 @@
 				<hr class="linea">
 			</div>
 			<div class="contenedor_galeria_videos off-bottom">
-				<div class="contenedor">
+				<div class="contenedor" ng-controller="VideosCtrl">
 					<ul>
-						<li>
-							<a href="https://www.youtube.com/watch?v=ABAj2tv5JQc" class="wplightbox">
-								<img src="img/video2.png" class="video_imagen">
+						<li ng-repeat="Video in Videos">
+							<a href="{{Video.Video}}" class="wplightbox">
+								<img src="{{Video.Miniatura}}" class="video_imagen">
 							</a>
 						</li>
-
-						<li>
-							<a href="https://www.youtube.com/watch?v=Tr3Ovyte8Cg" class="wplightbox">
-								<img src="img/video1.png" class="video_imagen">
-							</a>
-						</li>
-
-						<li>
-							<a href="https://www.youtube.com/watch?v=kmz8suzdFAo" class="wplightbox">
-								<img src="img/video3.png" class="video_imagen">
-							</a>
-						</li>
-
 					</ul>
 				</div>
 			</div>
@@ -252,10 +171,10 @@
 
 
 	
-	<script src="js/script.js"></script>
 	<script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/wonderpluginlightbox.js"></script>
+	<script src="js/script.js"></script>
 	
 
 	<script>
@@ -265,6 +184,10 @@
         $(document).ready(function() {
  			$('.image-link').magnificPopup({type:'image'});
 		});
+		
+		setTimeout(function(){
+			jQuery(".wplightbox").wonderpluginlightbox();
+		},2000)
     </script>
 
 

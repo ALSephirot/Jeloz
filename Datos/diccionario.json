@@ -27,8 +27,75 @@
 				
 			],
 			"Multimedia":{
-				"Imagenes":[],
-				"Videos":[]
+				"Imagenes":[
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini2.png",
+						"Alt":"Imagen 1"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini1.png",
+						"Alt":"Imagen 2"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini3.png",
+						"Alt":"Imagen 3"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini5.png",
+						"Alt":"Imagen 4"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini4.png",
+						"Alt":"Imagen 5"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini2.png",
+						"Alt":"Imagen 6"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini4.png",
+						"Alt":"Imagen 7"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini3.png",
+						"Alt":"Imagen 8"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini1.png",
+						"Alt":"Imagen 9"
+					},
+					{
+						"Imagen":"img/galeria_imagenes/originales/orig1.png",
+						"Miniatura":"img/galeria_imagenes/miniaturas/mini5.png",
+						"Alt":"Imagen 10"
+					}
+				],
+				"Videos":[
+					{
+						"Video":"https://www.youtube.com/watch?v=ABAj2tv5JQc",
+						"Miniatura":"img/video2.png",
+						"Alt":"Video 1"
+					},
+					{
+						"Video":"https://www.youtube.com/watch?v=Tr3Ovyte8Cg",
+						"Miniatura":"img/video1.png",
+						"Alt":"Video 2"
+					},
+					{
+						"Video":"https://www.youtube.com/watch?v=kmz8suzdFAo",
+						"Miniatura":"img/video3.png",
+						"Alt":"Video 3"
+					}
+				]
 			},
 			"VideosDestacados":{
 				"Principal":"",
