@@ -98,13 +98,94 @@
 				]
 			},
 			"VideosDestacados":{
-				"Principal":"",
-				"360":""
+				"Principal":"https://www.youtube.com/embed/ABAj2tv5JQc?autoplay=1",
+				"V360":"https://www.youtube.com/embed/0RPurvYriHI"
 			},
+			"WallPapers":[
+				{
+					"Miniatura":"img/galeria_imagenes/miniaturas/mini2.png",
+					"Celular":"img/galeria_imagenes/miniaturas/mini2.png",
+					"Tablet":"img/galeria_imagenes/miniaturas/mini2.png",
+					"PC":"img/galeria_imagenes/miniaturas/mini2.png"
+				},
+				{
+					"Miniatura":"img/galeria_imagenes/miniaturas/mini1.png",
+					"Celular":"img/galeria_imagenes/miniaturas/mini1.png",
+					"Tablet":"img/galeria_imagenes/miniaturas/mini1.png",
+					"PC":"img/galeria_imagenes/miniaturas/mini1.png"
+				},
+				{
+					"Miniatura":"img/galeria_imagenes/miniaturas/mini4.png",
+					"Celular":"img/galeria_imagenes/miniaturas/mini4.png",
+					"Tablet":"img/galeria_imagenes/miniaturas/mini4.png",
+					"PC":"img/galeria_imagenes/miniaturas/mini4.png"
+				},
+				{
+					"Miniatura":"img/galeria_imagenes/miniaturas/mini3.png",
+					"Celular":"img/galeria_imagenes/miniaturas/mini3.png",
+					"Tablet":"img/galeria_imagenes/miniaturas/mini3.png",
+					"PC":"img/galeria_imagenes/miniaturas/mini3.png"
+				}
+			],
 			"EmisoraOnline":[
 				{
-					"Nombre":"Cancion de Prueba",
-					"LinkCancion":"www.micancion.com/micancion.mp3",
+					"Nombre":"Cancion de Prueba 1",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco1.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 2",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco2.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 3",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco3.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 4",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco4.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 5",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco5.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 6",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco6.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 7",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco1.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 8",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco2.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 9",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco3.png",
+					"Duracion":1000
+				},
+				{
+					"Nombre":"Cancion de Prueba 10",
+					"LinkCancion":"audios/julito.mp3",
+					"Caratula":"img/discos_emisora/disco4.png",
 					"Duracion":1000
 				}
 			]

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="JelozApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Jeloz - Official Site</title>
@@ -8,9 +8,11 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="css/prettyPhoto.css" rel="stylesheet">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/smoothscroll.js"></script>
+	<script src="js/Angular/Controller.js"></script>
 
 
 	<!-- Magnific Popup core CSS file -->
@@ -55,7 +57,7 @@
 			<div class="contenedor-celular">
 				<div class="celular">
 					<div class="pantalla-cel">
-						<button class="boton-descargar-cel">DESCARGAR</button>
+						<a class="boton-descargar-cel" download="WallPaper-Celular">DESCARGAR</a>
 					</div>	
 				</div>
 			</div>
@@ -63,7 +65,7 @@
 			<div class="contenedor-pc">
 				<div class="pc">
 					<div class="pantalla-pc">
-						<button class="boton-descargar-pc">DESCARGAR</button>
+						<a class="boton-descargar-pc" download="WallPaper-PC">DESCARGAR</a>
 					</div>	
 				</div>
 			</div>
@@ -71,7 +73,7 @@
 			<div class="contenedor-tablet">
 				<div class="tablet">
 					<div class="pantalla-tablet">
-						<button class="boton-descargar-tablet">DESCARGAR</button>
+						<a class="boton-descargar-tablet" download="WallPaper-Tabet">DESCARGAR</a>
 					</div>	
 				</div>
 			</div>
@@ -86,43 +88,10 @@
 				<h2 class="titulo">WALLPAPERS</h2>
 				<hr class="linea">
 			
-			<div class="contenedor_galeria_wallpapers">
+			<div class="contenedor_galeria_wallpapers" ng-controller="WallPapersCtrl">
 				<ul>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini2.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini1.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini3.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini5.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini4.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini2.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini4.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini3.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini1.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini2.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-						<img src="img/galeria_imagenes/miniaturas/mini3.png" alt="">
-					</li>
-					<li onclick="abrirpopupdescarga()">
-   						<img src="img/galeria_imagenes/miniaturas/mini5.png" alt="">
+					<li onclick="abrirpopupdescarga(this)" ng-repeat="WallPaper in WallPapers" data-celular="{{WallPaper.Celular}}" data-tablet="{{WallPaper.Tablet}}" data-pc="{{WallPaper.PC}}">
+						<img src="{{WallPaper.Miniatura}}" alt="">
 					</li>
 				</ul>
 			</div>

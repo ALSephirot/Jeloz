@@ -32,6 +32,26 @@ angular.module("JelozApp", [])
         });
 	};
 	
+	Result.GetWallPapers = function(CallBack, onError){
+		$http.get("../../Datos/diccionario.json")
+		.success(function (data, status, headers, config) {
+            CallBack(data.RecursosJeloz.WallPapers);
+        })
+        .error(function (data, status, headers, config) {
+            onError(data);
+        });
+	};
+	
+	Result.GetCanciones = function(CallBack, onError){
+		$http.get("../../Datos/diccionario.json")
+		.success(function (data, status, headers, config) {
+            CallBack(data.RecursosJeloz.EmisoraOnline);
+        })
+        .error(function (data, status, headers, config) {
+            onError(data);
+        });
+	};
+	
 	return Result;
 })
 .controller("RedesCtrl",function($scope,JelozService){
@@ -69,4 +89,34 @@ angular.module("JelozApp", [])
 	}
 	
 	JelozService.GetVideos(CallBackR,onErrorR);
+})
+
+.controller("WallPapersCtrl",function($scope,JelozService){
+	var CallBackR = function(Data){
+		$scope.WallPapers = Data;
+	};
+	
+	var onErrorR = function (Data){
+		alert(JSON.stringify(Data));
+	}
+	
+	JelozService.GetWallPapers(CallBackR,onErrorR);
+})
+
+.controller("EmisoraCtrl",function($scope,JelozService){
+	var CallBackR = function(Data){
+		$scope.Canciones = Data;
+	};
+	
+	var onErrorR = function (Data){
+		alert(JSON.stringify(Data));
+	}
+	
+	$scope.ClickCancion = function(ImagenCancion){
+		
+		$("#Reproductor").attr("src",ImagenCancion.Cancion.LinkCancion);
+		$(".titulo-cancion").html(ImagenCancion.Cancion.Nombre)
+	}
+	
+	JelozService.GetCanciones(CallBackR,onErrorR);
 })
