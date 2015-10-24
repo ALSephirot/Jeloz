@@ -13,6 +13,35 @@ body{
 	background: url(../img/textura_negra.png) !important;
 }
 
+.oculto{
+	opacity: 0 !important;
+}
+
+.contenedor-caratula{
+	width: 100%;
+	height: 300px;
+	padding: 10px 0px;
+	overflow: hidden;
+}
+
+.elgif{
+	width: 100%;
+	height:300px;
+	position: absolute;
+	margin-top: -10px;
+	background: url(../img/discos_emisora/psicodelic.gif) no-repeat;
+	background-size: 100%;
+	background-position: middle;
+	opacity: 0.08;
+}
+
+.contenedor-caratula img{
+	width: 200px;
+	position: relative;
+	left:50%; 
+	margin-left: -100px;
+}
+
 .titulo-cancion{
 	font-family: century;
 	font-size: 23px;
@@ -81,27 +110,12 @@ body{
     top: 0px;
     z-index: 99;
     width: 50px !important;
-    left: 1%;
-    top: 1%;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
     -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition:all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-}
-
-.nombre-cancion{
-	width: 100%;
-	height: 45px;
-	background: rgba(0,0,0,0.6);
-	position: absolute;
-	top: 78%;
-}
-
-.nombre-cancion p{
-	font-family: century;
-	font-size: 12px;
-	color: white;
-	text-align: center;
-	position: relative;
-	top: 5px;
 }
 
 .kc-item{
@@ -238,6 +252,647 @@ position: absolute;
 	right: 0px;
 	bottom: 0px;
 	opacity: 1;
+}
+
+.fondo-avatar{
+		background:#E5C849;
+	}
+
+.tipo-ropa{
+	width: 100%;
+	height: auto;
+	padding: 2px 0px; 
+	margin-bottom: 8px;
+	display: inline-block;
+}	
+
+.item-ropa{
+	width: 20%;
+	height: 60px;
+	float: left;
+}
+
+.item-ropa img{
+	height: 100%;
+	position: relative;
+	left: 50%;
+	margin-left: -30px;
+	cursor: pointer;
+}
+
+.contenedor-ropa{
+	width: 100%;
+	height: 460px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-radius: 5px;
+	background: white;
+	display: inline-block;
+}
+
+.contenedor-ropa img{
+	width: 20%;
+	float: left;
+	cursor: pointer;
+	padding: 6px;
+	border: 1px solid #ccc;
+}
+
+.senalador{
+	width: 30px;
+	height: 30px;
+	background: url(../img/senalador.png);
+	background-size: 100%;
+	background-position: bottom;
+	position: relative;
+	left: 8%;
+	top: 2px;
+	-webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:        all 400ms cubic-bezier(0.215, 0.61, 0.355, 1); 
+}
+
+
+.contenedor-cabeza{
+	display: auto;
+}
+.contenedor-torso{
+	display: none;
+}
+.contenedor-piernas{
+	display: none;
+}
+.contenedor-tenis{
+	display: none;
+}
+.contenedor-fondo{
+	display: none;
+}
+
+.personaje{
+	width: 230px;
+	height: 540px;
+	background: url(../img/juego/avatar-default.png) no-repeat;
+	background-size:100%;
+	margin: 0 auto; 
+	position: relative;
+}
+
+.ropa{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta1{
+	background:url(../img/juego/torso/camiseta1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta2{
+	background:url(../img/juego/torso/camiseta2.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta3{
+	background:url(../img/juego/torso/camiseta3.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta4{
+	background:url(../img/juego/torso/camiseta4.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta5{
+	background:url(../img/juego/torso/camiseta5.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta6{
+	background:url(../img/juego/torso/camiseta6.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta7{
+	background:url(../img/juego/torso/camiseta7.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta8{
+	background:url(../img/juego/torso/camiseta8.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta9{
+	background:url(../img/juego/torso/camiseta9.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.camiseta10{
+	background:url(../img/juego/torso/camiseta10.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+
+
+.cadena1{
+	background:url(../img/juego/cadenas/cadena1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+
+.gorra1{
+	background:url(../img/juego/gorras/gorra1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.gorra2{
+	background:url(../img/juego/gorras/gorra2.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra3{
+	background:url(../img/juego/gorras/gorra3.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra4{
+	background:url(../img/juego/gorras/gorra4.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra5{
+	background:url(../img/juego/gorras/gorra5.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra6{
+	background:url(../img/juego/gorras/gorra6.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra7{
+	background:url(../img/juego/gorras/gorra7.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra8{
+	background:url(../img/juego/gorras/gorra8.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra9{
+	background:url(../img/juego/gorras/gorra9.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gorra10{
+	background:url(../img/juego/gorras/gorra10.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+
+
+.reloj1{
+	background:url(../img/juego/relojes/reloj1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.reloj2{
+	background:url(../img/juego/relojes/reloj2.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.reloj3{
+	background:url(../img/juego/relojes/reloj3.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.reloj4{
+	background:url(../img/juego/relojes/reloj4.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.reloj5{
+	background:url(../img/juego/relojes/reloj5.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+
+
+.buso1{
+	background:url(../img/juego/busos/buso1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.buso2{
+	background:url(../img/juego/busos/buso2.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.buso3{
+	background:url(../img/juego/busos/buso3.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.buso4{
+	background:url(../img/juego/busos/buso4.png) no-repeat;
+	background-size:100%;
+}
+
+
+.buso5{
+	background:url(../img/juego/busos/buso5.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.buso6{
+	background:url(../img/juego/busos/buso6.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.buso7{
+	background:url(../img/juego/busos/buso7.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+
+
+
+.gafas1{
+	background:url(../img/juego/gafas/gafas1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.gafas2{
+	background:url(../img/juego/gafas/gafas2.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas3{
+	background:url(../img/juego/gafas/gafas3.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas4{
+	background:url(../img/juego/gafas/gafas4.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas5{
+	background:url(../img/juego/gafas/gafas5.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas6{
+	background:url(../img/juego/gafas/gafas6.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas7{
+	background:url(../img/juego/gafas/gafas7.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas8{
+	background:url(../img/juego/gafas/gafas8.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas9{
+	background:url(../img/juego/gafas/gafas9.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.gafas10{
+	background:url(../img/juego/gafas/gafas10.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+
+
+
+
+.pantalon1{
+	background:url(../img/juego/piernas/pantalon1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon2{
+	background:url(../img/juego/piernas/pantalon2.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon3{
+	background:url(../img/juego/piernas/pantalon3.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon4{
+	background:url(../img/juego/piernas/pantalon4.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon5{
+	background:url(../img/juego/piernas/pantalon5.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon6{
+	background:url(../img/juego/piernas/pantalon6.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon7{
+	background:url(../img/juego/piernas/pantalon7.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon8{
+	background:url(../img/juego/piernas/pantalon8.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon9{
+	background:url(../img/juego/piernas/pantalon9.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon10{
+	background:url(../img/juego/piernas/pantalon10.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.pantalon11{
+	background:url(../img/juego/piernas/pantalon11.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+
+.tenis1{
+	background:url(../img/juego/tenis/tenis1.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis2{
+	background:url(../img/juego/tenis/tenis2.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis3{
+	background:url(../img/juego/tenis/tenis3.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis4{
+	background:url(../img/juego/tenis/tenis4.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis5{
+	background:url(../img/juego/tenis/tenis5.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis6{
+	background:url(../img/juego/tenis/tenis6.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis7{
+	background:url(../img/juego/tenis/tenis7.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis8{
+	background:url(../img/juego/tenis/tenis8.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis9{
+	background:url(../img/juego/tenis/tenis9.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis10{
+	background:url(../img/juego/tenis/tenis10.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis11{
+	background:url(../img/juego/tenis/tenis11.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis12{
+	background:url(../img/juego/tenis/tenis12.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis13{
+	background:url(../img/juego/tenis/tenis13.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis14{
+	background:url(../img/juego/tenis/tenis14.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis15{
+	background:url(../img/juego/tenis/tenis15.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis16{
+	background:url(../img/juego/tenis/tenis16.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis17{
+	background:url(../img/juego/tenis/tenis17.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis18{
+	background:url(../img/juego/tenis/tenis18.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
+}
+
+.tenis19{
+	background:url(../img/juego/tenis/tenis19.png) no-repeat;
+	background-size:100%;
+	-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition:all 600ms cubic-bezier(0.215, 0.61, 0.355, 1)!important;
 }
 
 
@@ -439,10 +1094,6 @@ border-radius: 0px !important;
 	font-size: 25px;
 	background: url(../img/oro.png) no-repeat;
  	background-size: 100%;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -ms-background-clip: text;
-  -ms-text-fill-color: transparent;
  	-webkit-background-clip: text;
  	-webkit-text-fill-color: transparent;
 }
@@ -451,7 +1102,7 @@ border-radius: 0px !important;
 .subtitulo{
 	font-family: century;
 	font-size: 18px;
-	color: black;
+	color: white;
 	text-align: left;
 }
 
@@ -470,9 +1121,9 @@ border-radius: 0px !important;
 	width: 100%;
 	padding: 8px 10px;
 	font-family: century;
-	border: 2px solid black;
+	border: 2px solid #254F9B;
 	font-size: 20px;
-	color: black;
+	color: white;
 	background: transparent;
 
 }
@@ -482,9 +1133,9 @@ border-radius: 0px !important;
 	height: 150px;
 	padding: 10px 10px;
 	font-family: century;
-	border: 2px solid black;
+	border: 2px solid #254F9B;
 	font-size: 20px;
-	color: black;
+	color: white;
 	background: transparent;
 }
 
@@ -897,6 +1548,14 @@ border-radius: 0px !important;
 
 
 @media (max-width:768px){
+
+	.contenedor-ropa img{
+	width: 33%;
+	float: left;
+	cursor: pointer;
+	padding: 6px;
+	border: 1px solid #ccc;
+}
 
 	.contenedor_galeria_imagenes{
 	width:95%;

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="JelozApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Jeloz - Official Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+
+	<link href="css/killercarousel.css" type="text/css" rel="stylesheet" />
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery2.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/smoothscroll.js"></script>
+    <script src="js/Angular/Controller.js"></script>
+
+	 <script type = "text/javascript">
+		
+            // Create the carousel.
+            $(function() {
+                setTimeout(function(){
+                    $('.kc-wrap').KillerCarousel({
+                        // Default natural width of carousel.
+                        width:1500,
+                        // Item spacing in 3d (has CSS3 3d) mode.
+                        spacing3d: 190,
+                        // Item spacing in 2d (no CSS3 3d) mode. 
+                        spacing2d: 190,
+                        showShadow: true,
+                        showReflection: true,
+                        infiniteLoop: true,
+                        fadeEdgeItems: true,
+                        scale:  110      
+                    });
+                },1500);
+            });
+        </script>     
+
+
+
+
+<link rel="icon" type="image/png" href="img/favicon.png"> 
+
+</head>
+<body class="emisora-body">
+
+	
+	<nav class="navbar navbar-default navbar-fixed-top barra_menu" role="navigation" id="menu">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+						<span class="sr-only">Desplegar / Ocultar menu</span>
+						<span class="glyphicon glyphicon-menu-hamburger botonsito" style="width:30px;"></span>
+						
+					</button>
+					<a href="#" class="navbar-brand"><img src="img/logo_header.png" class="logo_menu"></a>
+				</div>
+				<!-- inicia menu -->
+				<div class="collapse navbar-collapse" id="navegacion">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html#multimedia" class="active">MULTIMEDIA</a></li>
+						<li><a href="wallpapers.html">WALLPAPERS</a></li>
+						<li><a href="#emisora">EMISORA ONLINE</a></li>
+						<li><a href="index.html#contacto">CONTACTO</a></li>
+					</ul>
+				<div>
+			</div>
+	</nav>
+	
+			<div class="contenedor" id="emisora">
+				<h2 class="titulo">EMISORA ONLINE</h2>
+				<hr class="linea">
+			</div>
+		
+
+ <div class = "kc-wrap off-bottom " ng-controller="EmisoraCtrl">
+
+            <!-- Carousel items follow -->
+            <div class="kc-item" ng-repeat="Cancion in Canciones" data-musica="{{Cancion.LinkCancion}}" ng-click="ClickCancion(this)">
+                <img src="{{Cancion.Caratula}}" alt = "" >
+                <img src="img/play2.png"  alt="" class="repro">
+                <div class="nombre-cancion">
+                    <p>{{Cancion.Nombre}}</p>
+                </div>
+            </div>
+        </div>
+
+       <div class="descripcion">
+       	<h3 class="titulo-cancion">
+       		
+       	</h3>
+       	<hr class="linea-emisora">
+       </div> 
+
+	<audio id="Reproductor" width="300" height="32" src="" controls="controls" autoplay="autoplay" preload="" class="reproductor">
+ 
+</audio>
+
+	<footer class="footer emisora-footer">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="logo-footer">
+					<img src="img/logo-footer.png" alt="">
+				</div>
+				<p class="derechos">Todos los derechos reservados</p>
+				<p class="derechos">Desarrollado por D&D Designers and Developers</p><br>
+				<p class="derechos oro">J E L O Z 2 0 1 5</p>
+				
+			</div>
+		</div>
+	</footer>
+
+	<div id="wonderpluginlightbox_options"  data-jsfolder="imag"  data-autoplay="true" data-html5player="true" ></div>
+
+
+	<script src="js/scriptemisora.js"></script>
+	<script src="js/killercarousel.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wonderpluginlightbox.js"></script>
+	
+
+	<script>
+        //Conectar la galería con el plugin
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+
+        $(document).ready(function() {
+ 			$('.image-link').magnificPopup({type:'image'});
+		});
+    </script>
+
+
+	
+</body>
+</html>
