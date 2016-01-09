@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" ng-app="JelozApp">
 <head>
 	<meta charset="UTF-8">
@@ -43,7 +43,7 @@
 				<div class="collapse navbar-collapse" id="navegacion">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.html#multimedia" class="active">MULTIMEDIA</a></li>
-						<li><a href="#wallpapers">WALLPAPERS</a></li>
+						<li><a href="index.html#wallpapers">WALLPAPERS</a></li>
 						<li><a href="emisora.html">EMISORA ONLINE</a></li>
 						<li><a href="index.html#contacto">CONTACTO</a></li>
 					</ul>
@@ -60,14 +60,14 @@
 			<div class="row">
 				<div class="col-md-4 fondo-avatar">
 					<div class="personaje">
-						<div id="Tenis" class="ropa tenis17"></div>
-						<div id="Piernas" class="ropa pantalon7"></div>
-						<div id="Relojes" class="ropa reloj"></div>
-						<div id="Camisas" class="ropa camiseta1"></div>
-						<div id="Cadenas" class="ropa cadena1"></div>
-						<div id="Busos" class="ropa buso"></div>
-						<div id="Gafas" class="ropa gafas"></div>
-						<div id="Gorras" class="ropa gorra"></div>
+						<div id="Tenis" class="ropa"></div>
+						<div id="Piernas" class="ropa"></div>
+						<div id="Relojes" class="ropa"></div>
+						<div id="Camisas" class="ropa"></div>
+						<div id="Cadenas" class="ropa"></div>
+						<div id="Busos" class="ropa"></div>
+						<div id="Gafas" class="ropa"></div>
+						<div id="Gorras" class="ropa"></div>
 					</div>
 				</div>
 				<div class="col-md-8">
@@ -91,131 +91,111 @@
 					<div class="senalador"></div>
 
 					<div class="contenedor-ropa contenedor-cabeza">
-						<img data-accion="remove" data-seccion="Gorras" src="img/juego/gorras/remove-gorra.png" alt="">
-
-						<img data-class="gorra1" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap1.png" alt="">
-
-						<img data-class="gorra2" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap2.png" alt="">
-
-						<img data-class="gorra3" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap3.png" alt="">
-
-						<img data-class="gorra4" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap4.png" alt="">
-
-						<img data-class="gorra5" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap5.png" alt="">
-
-						<img data-class="gorra6" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap6.png" alt="">
-
-						<img data-class="gorra7" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap7.png" alt="">
-
-						<img data-class="gorra8" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap8.png" alt="">
-
-						<img data-class="gorra9" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap9.png" alt="">
-
-						<img data-class="gorra10" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap10.png" alt="">
+						<img onclick="CambiarRopa(this);" data-accion="remove" data-seccion="Gorras" src="img/juego/gorras/remove-gorra.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra1" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra2" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap2.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra3" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap3.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra4" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap4.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra5" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap5.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra6" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap6.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra7" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap7.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra8" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap8.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra9" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap9.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gorra10" data-accion="add" data-seccion="Gorras"src="img/juego/gorras/gorrap10.png" alt="">
 
 						<!-- Gafas -->
 
-						<img data-accion="remove" data-seccion="Gafas" src="img/juego/gafas/remove-gafas.png" alt="">
-
-						<img data-class="gafas1" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp1.png" alt="">
-
-						<img data-class="gafas2" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp2.png" alt="">
-
-						<img data-class="gafas3" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp3.png" alt="">
-
-						<img data-class="gafas4" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp4.png" alt="">
-
-						<img data-class="gafas5" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp5.png" alt="">
-
-						<img data-class="gafas6" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp6.png" alt="">
-
-						<img data-class="gafas7" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp7.png" alt="">
-
-						<img data-class="gafas8" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp8.png" alt="">
-
-						<img data-class="gafas9" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp9.png" alt="">
-
-						<img data-class="gafas" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp10.png" alt="">
+						<img onclick="CambiarRopa(this);" data-accion="remove" data-seccion="Gafas" src="img/juego/gafas/remove-gafas.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas1" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas2" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp2.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas3" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp3.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas4" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp4.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas5" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp5.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas6" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp6.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas7" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp7.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas8" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp8.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas9" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp9.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="gafas10" data-accion="add" data-seccion="Gafas"src="img/juego/gafas/gafasp10.png" alt="">
 					
 					</div>
 
 					<div class="contenedor-ropa contenedor-torso">
 						<img data-accion="remove" data-seccion="Camisas"src="img/juego/torso/remove-torso.png" alt="">
-						<img data-class="camisa1" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap1.png" alt="">
-						<img data-class="camisa2" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap2.png" alt="">
-						<img data-class="camisa3" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap3.png" alt="">
-						<img data-class="camisa4" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap4.png" alt="">
-						<img data-class="camisa5" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap5.png" alt="">
-						<img data-class="camisa6" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap6.png" alt="">
-						<img data-class="camisa7" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap7.png" alt="">
-						<img data-class="camisa8" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap8.png" alt="">
-						<img data-class="camisa9" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap9.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta1" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta2" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap2.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta3" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap3.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta4" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap4.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta5" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap5.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta6" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap6.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta7" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap7.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta8" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap8.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="camiseta9" data-accion="add" data-seccion="Camisas"src="img/juego/torso/camisetap9.png" alt="">
 
 						
 
-						<img data-accion="remove" data-seccion="Busos"src="img/juego/busos/remove-buso.png" alt="">
-						<img data-class="buso1" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop1.png" alt="">
-						<img data-class="buso2" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop2.png" alt="">
-						<img data-class="buso3" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop3.png" alt="">
-						<img data-class="buso4" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop4.png" alt="">
-						<img data-class="buso5" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop5.png" alt="">
-						<img data-class="buso6" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop6.png" alt="">
-						<img data-class="buso7" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop7.png" alt="">
+						<img onclick="CambiarRopa(this);" data-accion="remove" data-seccion="Busos"src="img/juego/busos/remove-buso.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="buso1" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="buso2" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop2.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="buso3" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop3.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="buso4" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop4.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="buso5" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop5.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="buso6" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop6.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="buso7" data-accion="add" data-seccion="Busos"src="img/juego/busos/busop7.png" alt="">
 
-						<img data-accion="remove" data-seccion="Cadenas"src="img/juego/cadenas/remove-cadenas.png" alt="">
-						<img data-class="pantalon2" data-accion="add" data-seccion="Camisas"src="img/juego/cadenas/cadenap1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-accion="remove" data-seccion="Cadenas"src="img/juego/cadenas/remove-cadenas.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="cadena1" data-accion="add" data-seccion="Cadenas"src="img/juego/cadenas/cadenap1.png" alt="">
 
-						<img data-accion="remove" data-seccion="Gafas" src="img/juego/relojes/remove-reloj.png" alt="">
-						<img data-class="reloj1" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp1.png" alt="">
-						<img data-class="reloj2" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp2.png" alt="">
-						<img data-class="reloj3" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp3.png" alt="">
-						<img data-class="reloj4" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp4.png" alt="">
-						<img data-class="reloj5" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp5.png" alt="">
+						<img onclick="CambiarRopa(this);" data-accion="remove" data-seccion="Gafas" src="img/juego/relojes/remove-reloj.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="reloj1" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="reloj2" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp2.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="reloj3" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp3.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="reloj4" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp4.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="reloj5" data-accion="add" data-seccion="Relojes"src="img/juego/relojes/relojp5.png" alt="">
 					</div>
 
 					<div class="contenedor-ropa contenedor-piernas">
-						<img data-accion="remove" data-seccion="Piernas"src="img/juego/piernas/remove-pantalon.png" alt="">
-						<img data-class="pantalon1" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp1.png" alt="">
-						<img data-class="pantalon2" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp2.png" alt="">
-						<img data-class="pantalon3" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp3.png" alt="">
-						<img data-class="pantalon4" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp4.png" alt="">
-						<img data-class="pantalon5" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp5.png" alt="">
-						<img data-class="pantalon6" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp6.png" alt="">
-						<img data-class="pantalon7" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp7.png" alt="">
-						<img data-class="pantalon8" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp8.png" alt="">
-						<img data-class="pantalon9" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp9.png" alt="">
-						<img data-class="pantalon10" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp10.png" alt="">
-						<img data-class="pantalon11" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp11.png" alt="">
+						<img onclick="CambiarRopa(this);" data-accion="remove" data-seccion="Piernas"src="img/juego/piernas/remove-pantalon.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon1" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon2" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp2.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon3" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp3.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon4" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp4.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon5" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp5.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon6" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp6.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon7" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp7.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon8" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp8.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon9" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp9.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon10" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp10.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="pantalon11" data-accion="add" data-seccion="Piernas"src="img/juego/piernas/pantalonp11.png" alt="">
 					</div>
 
 					<div class="contenedor-ropa contenedor-tenis">
 
-						<img data-accion="remove" data-seccion="Tenis"src="img/juego/tenis/remove-tenis.png" alt="">
-						<img data-class="tenis1" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp1.png" alt="">
-						<img data-class="tenis2" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp2.png" alt="">
-						<img data-class="tenis3" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp3.png" alt="">
-						<img data-class="tenis4" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp4.png" alt="">
-						<img data-class="tenis5" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp5.png" alt="">
-						<img data-class="tenis6" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp6.png" alt="">
-						<img data-class="tenis7" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp7.png" alt="">		
-						<img data-class="tenis8" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp8.png" alt="">	
-						<img data-class="tenis9" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp9.png" alt="">	
-						<img data-class="tenis10" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp10.png" alt="">	
-						<img data-class="tenis11" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp11.png" alt="">	
-						<img data-class="tenis12" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp12.png" alt="">	
-						<img data-class="tenis13" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp13.png" alt="">	
-						<img data-class="tenis14" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp14.png" alt="">	
-						<img data-class="tenis15" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp15.png" alt="">	
-						<img data-class="tenis16" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp16.png" alt="">	
-						<img data-class="tenis17" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp17.png" alt="">	
-						<img data-class="tenis18" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp18.png" alt="">	
-						<img data-class="tenis19" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp19.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-accion="remove" data-seccion="Tenis"src="img/juego/tenis/remove-tenis.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="tenis1" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp1.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="tenis2" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp2.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="tenis3" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp3.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="tenis4" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp4.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="tenis5" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp5.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="tenis6" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp6.png" alt="">
+						<img onclick="CambiarRopa(this);" data-class="tenis7" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp7.png" alt="">		
+						<img onclick="CambiarRopa(this);" data-class="tenis8" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp8.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis9" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp9.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis10" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp10.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis11" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp11.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis12" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp12.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis13" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp13.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis14" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp14.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis15" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp15.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis16" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp16.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis17" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp17.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis18" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp18.png" alt="">	
+						<img onclick="CambiarRopa(this);" data-class="tenis19" data-accion="add" data-seccion="Tenis"src="img/juego/tenis/tenisp19.png" alt="">	
 
 
 					</div>
 
 					<div class="contenedor-ropa contenedor-fondo">
-						fondo
+						
 					</div>
 
 					
@@ -255,7 +235,34 @@
 
         $(document).ready(function() {
  			$('.image-link').magnificPopup({type:'image'});
-		});
+        });
+
+
+        function CambiarRopa(Prenda)
+        {
+            var accion = $(Prenda).attr("data-accion");
+            var Seccion = $(Prenda).attr("data-seccion");
+            var Class = $(Prenda).attr("data-class");;
+
+            $("#" + Seccion).attr("class", "ropa");
+
+            var algo = $("[data-accion=remove]");
+            $.each(algo, function (index, item) {
+                $(item).attr("data-accion", "add")
+            })
+
+            if(accion == "add")
+            {
+                $("#" + Seccion).addClass(Class);
+                $(Prenda).attr("data-accion","remove");
+            }
+            else
+            {
+                $("#" + Seccion).removeClass(Class);
+                $(Prenda).attr("data-accion", "add");
+            }
+
+        }
     </script>
 
 
