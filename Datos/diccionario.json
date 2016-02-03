@@ -27,58 +27,98 @@
 				
 			],
 			"Multimedia":{
-				"Imagenes":[
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini2.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini2.png",
-						"Alt":"Imagen 1"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini1.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini1.png",
-						"Alt":"Imagen 2"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini3.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini3.png",
-						"Alt":"Imagen 3"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini5.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini5.png",
-						"Alt":"Imagen 4"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini4.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini4.png",
-						"Alt":"Imagen 5"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini2.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini2.png",
-						"Alt":"Imagen 6"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini4.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini4.png",
-						"Alt":"Imagen 7"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini3.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini3.png",
-						"Alt":"Imagen 8"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini1.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini1.png",
-						"Alt":"Imagen 9"
-					},
-					{
-						"Imagen":"img/galeria_imagenes/miniaturas/mini5.png",
-						"Miniatura":"img/galeria_imagenes/miniaturas/mini5.png",
-						"Alt":"Imagen 10"
-					}
-				],
+        "Imagenes": [
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini2.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini2.png",
+            "Alt": "Imagen 1"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini1.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini1.png",
+            "Alt": "Imagen 2"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini3.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini3.png",
+            "Alt": "Imagen 3"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini5.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini5.png",
+            "Alt": "Imagen 4"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini4.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini4.png",
+            "Alt": "Imagen 5"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini2.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini2.png",
+            "Alt": "Imagen 6"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini4.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini4.png",
+            "Alt": "Imagen 7"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini3.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini3.png",
+            "Alt": "Imagen 8"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini1.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini1.png",
+            "Alt": "Imagen 9"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/mini5.png",
+            "Miniatura": "img/galeria_imagenes/miniaturas/mini5.png",
+            "Alt": "Imagen 10"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/01.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/01-min.jpg",
+            "Alt": "Imagen 11"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/02.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/02-min.jpg",
+            "Alt": "Imagen 12"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/03.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/03-min.jpg",
+            "Alt": "Imagen 13"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/04.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/04-min.jpg",
+            "Alt": "Imagen 14"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/05.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/05-min.jpg",
+            "Alt": "Imagen 15"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/06.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/06-min.jpg",
+            "Alt": "Imagen 16"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/07.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/07-min.jpg",
+            "Alt": "Imagen 17"
+          },
+          {
+            "Imagen": "img/galeria_imagenes/miniaturas/08.jpg",
+            "Miniatura": "img/galeria_imagenes/miniaturas/08-min.jpg",
+            "Alt": "Imagen 18"
+          }
+        ],
 				"Videos":[
 					{
 						"Video":"https://www.youtube.com/watch?v=ABAj2tv5JQc",

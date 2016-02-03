@@ -14,7 +14,7 @@
 	<script src="js/juego.js"></script>
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/Angular/Controller.js"></script>
-
+    <script src="js/html2canvas.js"></script>
 
 	<!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="css/all.min.css"> 
@@ -42,9 +42,10 @@
 				<!-- inicia menu -->
 				<div class="collapse navbar-collapse" id="navegacion">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html#multimedia" class="active">MULTIMEDIA</a></li>
+						<li><a href="index.html#multimedia">MULTIMEDIA</a></li>
 						<li><a href="index.html#wallpapers">WALLPAPERS</a></li>
 						<li><a href="emisora.html">EMISORA ONLINE</a></li>
+                        <li><a href="juego.html" class="active">JUEGO</a></li>
 						<li><a href="index.html#contacto">CONTACTO</a></li>
 					</ul>
 				<div>
@@ -57,8 +58,8 @@
 			<div class="contenedor">
 				<h2 class="titulo">VISTE A JELOZ</h2>
 				<hr class="linea">
-			<div class="row">
-				<div class="col-md-4 fondo-avatar">
+			<div  class="row">
+				<div id="ImagenFinal" class="col-md-4 fondo-avatar">
 					<div class="personaje">
 						<div id="Tenis" class="ropa"></div>
 						<div id="Piernas" class="ropa"></div>
@@ -203,7 +204,8 @@
 			</div>
 			</div>
 		</div>
-		
+        <button onclick="ExportImage()" class="boton_enviar">Guardar Imagen</button>
+		<canvas id="Export" style="display:none;"></canvas>
 	</section>
 
 	<footer class="footer">
@@ -262,6 +264,13 @@
                 $(Prenda).attr("data-accion", "add");
             }
 
+        }
+
+        function ExportImage() {
+            var img = $("#ImagenFinal")
+            html2canvas(img).then(function (canvas) {
+                window.open(canvas.toDataURL("image/png"),"_blank","download",true);
+            });
         }
     </script>
 
